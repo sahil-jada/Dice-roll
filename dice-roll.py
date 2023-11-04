@@ -1,7 +1,7 @@
 import random
 print("Welcome to the dice roll game")
 x = input("Enter 'y' to roll the dice: ")
-while x == 'y':
+while x.lower() == 'y':
     roll = random.randint(1,6)
     if roll == 1:
         print("---------")
@@ -46,6 +46,6 @@ while x == 'y':
         print("---------")
 
     x = input("Roll again? y/n: ")
-    if x != 'y':
+    if x.lower() != 'y':
         print("Thankyou for playing")
         break
